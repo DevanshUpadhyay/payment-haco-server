@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "payment-haco-server",
+  "builds": [
+    {
+      "src": "app.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/app.js"
+    }
+  ]
+}
