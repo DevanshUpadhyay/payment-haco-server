@@ -38,10 +38,10 @@ app.get("/", (req, res) => {
   );
 });
 const CLIENT_ID =
-  "AXxatcVnSjn8hXDurzxEwQREX6pSdzRkXexK09AjG2mDN-0SeQG0GdXtKo_FymHutolwtnS48NVV1BI1";
+  "ARm1eU0pOZSGYrOTQvVV9Gw4_3qal2VpoDPRcVJroLDgY6ZKfw-W0bpHQgpXrOOSy7DD6BVNKAN9SeqA";
 const APP_SECRET = process.env.APP_SECRET;
-// const base = "https://api-m.paypal.com";
-const base = "https://api-m.sandbox.paypal.com";
+const base = "https://api-m.paypal.com";
+// const base = "https://api-m.sandbox.paypal.com";
 const generateAccessToken = async () => {
   try {
     const auth = Buffer.from(CLIENT_ID + ":" + APP_SECRET).toString("base64");
